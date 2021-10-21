@@ -25,8 +25,13 @@ const Home = () => {
             placeholder="Введите данные"
           />
         </div>
-        <div className="flex ml-4 bg-red-500 rounded-lg w-16 text-white font-bold justify-center">
-          <button type="button" id="search-button" onClick={() => history.push(`/${value}`)}>
+        <div className="flex ml-4 bg-red-500 hover:bg-red-700 rounded-lg w-16 text-white font-bold justify-center ">
+          <button
+            className="focus:outline-none"
+            type="button"
+            id="search-button"
+            onClick={() => history.push(`/dashboard/${value}`)}
+          >
             Send
           </button>
         </div>

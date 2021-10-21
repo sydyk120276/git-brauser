@@ -19,14 +19,16 @@ const Pepository = () => {
     <div>
       <Head title="Hello" />
       <div className="flex items-center justify-center h-screen">
-        <div className="">
-        {user.map((list) => {
-          return (
-            <div key={list.id}>
-              <Link to={`/dashbord/${userName}/${list}`}>{list.name}</Link>
-            </div>
-          )
-        })}
+        <div className="p-10 bg-green-500 text-xl font-bold leading-loose rounded-lg ">
+          {user.map((list) => {
+            return (
+              <div key={list.id}>
+                <Link className="bg-purple-300 w-full rounded-md p-1" to={`${userName}/${list}`}>
+                  {list.name}
+                </Link>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
