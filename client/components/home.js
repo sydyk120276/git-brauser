@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="flex justify-center items-center h-screen ">
       <Head title="Hello" />
-      
+
       <div className="flex   bg-blue-300 border p-16 rounded-lg ">
         <div className="border-4 border-gray-500 rounded-lg ">
           <input
@@ -32,7 +32,7 @@ const Home = () => {
             className="focus:outline-none"
             type="button"
             id="search-button"
-            onClick={() => history.push(`/dashboard/${value}`)}
+            onClick={() => history.push(`${value}`)}
           >
             Send
           </button>

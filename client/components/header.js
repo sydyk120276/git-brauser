@@ -14,20 +14,20 @@ const Header = ({ repositoryName }) => {
           className="flex border-2 border-black p-4 bg-purple-400 hover:bg-purple-600 rounded-lg h-8 items-center font-bold text-lg text-white  mt-4 ml-4 "
           id="repository-name"
         >
-          <Link to={`/dashboard/${userName}`}>{userName}</Link>
+          <Link to={`${userName}`}>{userName}</Link>
         </div>
         <div
           className="flex  p-4  rounded-lg h-8 items-center font-bold text-lg text-black mt-4 text-xl "
           id="go-repository-list"
         >
-          <Link to={`/dashboard/${userName}`}>{repositoryName}</Link>
+          <Link to={`${userName}`}>{repositoryName}</Link>
         </div>
 
         <div
           className="flex border-2 border-black p-4 bg-purple-400 hover:bg-purple-600 rounded-lg h-8 items-center font-bold text-lg text-white mt-4 mr-4 "
           id="go-back"
         >
-          <Link to="/dashboard" id="go-back">
+          <Link to="/" id="go-back">
             go-back
           </Link>
         </div>
