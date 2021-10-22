@@ -27,7 +27,7 @@ const Pepository = () => {
               <div key={list.id}>
                 <Link
                   className="hover:text-red-600  w-full rounded-md p-1"
-                  to={`${userName}/${list.name}`}
+                  to={`/${userName}/${list.name}`}
                 >
                   {list.name}
                 </Link>
