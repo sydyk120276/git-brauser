@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
 
 import Head from './head'
+import Header from './header'
 
 const Pepository = () => {
   const [user, setUser] = useState([])
@@ -18,12 +19,16 @@ const Pepository = () => {
   return (
     <div>
       <Head title="Hello" />
+      <Header />
       <div className="flex items-center justify-center h-screen">
-        <div className="p-10 bg-green-500 text-xl font-bold leading-loose rounded-lg ">
+        <div className="p-10 bg-blue-300   text-xl font-bold leading-loose rounded-lg border-4 border-black">
           {user.map((list) => {
             return (
               <div key={list.id}>
-                <Link className="bg-purple-300 w-full rounded-md p-1" to={`${userName}/${list}`}>
+                <Link
+                  className="hover:text-red-600  w-full rounded-md p-1"
+                  to={`${userName}/${list.name}`}
+                >
                   {list.name}
                 </Link>
               </div>

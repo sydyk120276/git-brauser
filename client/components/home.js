@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import { history } from '../redux'
 import Head from './head'
+
 // import wave from '../assets/images/wave.jpg'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div className="flex justify-center items-center h-screen ">
       <Head title="Hello" />
+      
       <div className="flex   bg-blue-300 border p-16 rounded-lg ">
         <div className="border-4 border-gray-500 rounded-lg ">
           <input

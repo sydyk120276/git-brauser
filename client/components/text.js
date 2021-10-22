@@ -1,14 +1,29 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import Markdown from 'markdown-to-jsx'
+
 import Head from './head'
+import Header from './header'
 
 const Text = () => {
+const [text, setText] = useState('')
+const { userName, repositoryName } = useParams()
+
+useEffect(() => {
+  axios(`https://raw.githubusercontent.com/${userName}/${repositoryName}/master/README.md`).then(
+    (repo) => {
+      setText(repo.data)
+    }
+  )
+}, [repositoryName, userName])
+
   return (
     <div>
       <Head title="Hello" />
-      <div className="flex items-center justify-center h-screen">
-        <div className="bg-indigo-800 hover:text-red-500 text-white font-bold rounded-lg border shadow-lg p-10">
-          This is Text component akbar
-        </div>
+      <Header repositoryName={repositoryName} />
+      <div id="description" className="bg-purple-300 rounded-lg border shadow-lg p-10">
+        <Markdown>{text}</Markdown>
       </div>
     </div>
   )
