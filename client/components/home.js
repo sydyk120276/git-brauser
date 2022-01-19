@@ -21,6 +21,7 @@ const Home = () => {
           <input
             className="placeholder-gray-500 placeholder-opacity-100 pl-2 focus:outline-none"
             type="text"
+            autoComplete="off"
             id="input-field"
             onChange={onChange}
             value={value}
