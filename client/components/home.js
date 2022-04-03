@@ -25,7 +25,7 @@ const Home = () => {
             id="input-field"
             onChange={onChange}
             value={value}
-            placeholder="Введите данные"
+            placeholder="Введите репозиторий"
           />
         </div>
         <div className="flex ml-4 bg-red-500 hover:bg-red-700 rounded-lg w-16 text-white font-bold justify-center ">
