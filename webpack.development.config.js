@@ -41,6 +41,7 @@ const config = {
   context: resolve(__dirname, 'client'),
   devServer: {
     hotOnly: true,
+    open: true,
     contentBase: resolve(__dirname, 'dist/assets'),
     watchContentBase: true,
     host: '0.0.0.0',

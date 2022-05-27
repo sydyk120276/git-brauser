@@ -1,6 +1,10 @@
 module.exports = {
   purge: ['./client/**/*.html', './client/**/*.jsx', './client/**/*.js'],
-  theme: {},
+  theme: {
+    container: {
+      center: true
+    }
+  },
   variants: {},
   plugins: []
 }

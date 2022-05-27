@@ -13,10 +13,10 @@ const Home = () => {
     setValue(e.target.value)
   }
   return (
-    <div className="flex justify-center items-center h-screen ">
+    <div className="container flex justify-center items-center h-screen ">
       <Head title="Hello" />
 
-      <div className="flex   bg-blue-300 border p-16 rounded-lg ">
+      <div className="flex   bg-blue-300 border p-10 rounded-lg ">
         <div className="border-4 border-gray-500 rounded-lg ">
           <input
             className="placeholder-gray-500 placeholder-opacity-100 pl-2 focus:outline-none"
@@ -25,7 +25,7 @@ const Home = () => {
             id="input-field"
             onChange={onChange}
             value={value}
-            placeholder="Введите репозиторий"
+            placeholder="Введите аккаунт GitHub"
           />
         </div>
         <div className="flex ml-4 bg-red-500 hover:bg-red-700 rounded-lg w-16 text-white font-bold justify-center ">

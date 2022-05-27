@@ -20,7 +20,7 @@ const Pepository = () => {
     <div>
       <Head title="Hello" />
       <Header />
-      <div className="flex items-center justify-center h-screen">
+      <div className="container flex items-center justify-center h-screen">
         <div className="p-10 bg-blue-300   text-xl font-bold leading-loose rounded-lg border-4 border-black">
           {user.map((list) => {
             return (

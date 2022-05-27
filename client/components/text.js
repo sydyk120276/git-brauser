@@ -22,7 +22,7 @@ useEffect(() => {
     <div>
       <Head title="Hello" />
       <Header repositoryName={repositoryName} />
-      <div id="description" className="bg-purple-300 rounded-lg border shadow-lg p-10">
+      <div id="description" className="container bg-purple-300 rounded-lg border shadow-lg p-10">
         <Markdown>{text}</Markdown>
       </div>
     </div>

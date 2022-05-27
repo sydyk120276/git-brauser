@@ -9,7 +9,7 @@ const Header = ({ repositoryName }) => {
   return (
     <div>
       <Head title="Hello" />
-      <div className="flex h-16 w-full bg-blue-300 justify-between">
+      <div className="container flex h-16 w-full bg-blue-300 justify-between">
         <div
           className="flex border-2 border-black p-4 bg-purple-400 hover:bg-purple-600 rounded-lg h-8 items-center font-bold text-lg text-white  mt-4 ml-4 "
           id="repository-name"
